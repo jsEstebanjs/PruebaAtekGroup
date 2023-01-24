@@ -1,0 +1,81 @@
+.mainContainerFormLogin{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+}
+.mainContainerFormLogin .containerLoaderFormLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.mainContainerFormLogin .containerLoaderFormLogin .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #1877f2;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }
+
+.mainContainerFormLogin .containerLabelInput{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.mainContainerFormLogin .containerLabelInput .labelFormLogin{
+    font-size: 14px;
+    font-weight: 500;
+}
+.mainContainerFormLogin .containerLabelInput .inputFormLogin{
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #dddfe2;
+
+}
+.mainContainerFormLogin .containerLabelInput .inputFormLogin:focus{
+    border-color: blue;
+
+}
+.mainContainerFormLogin .containerLabelInput .errorFormLogin{
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+}
+.mainContainerFormLogin .buttonFormLogin{
+    cursor: pointer;
+    padding: 10px;
+    background-color: #1877f2;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all .3s;
+}
+
+.mainContainerFormLogin .buttonFormLogin:hover{
+    border: 1px solid #1877f2;
+    color: #1877f2;
+    background-color: white;
+}
